@@ -16,7 +16,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|index: true, null: false, unique: true|
-|mail|string|null: false|
+|mail|string|index: true, null: false, unique: true|
 
 ### Association
 
@@ -44,25 +44,9 @@
 |Column|Type|Options|
 |------|----|-------|
 |content|string|null: false|
+|images|string|null: false|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-|created_at|integer|null: false|
-
-### Association
-
-- belongs_to :user
-- belongs_to :group
-
-
-## pictures table
-
-|Column|Type|Options|
-|------|----|-------|
-|title|string|null: false|
-|url|string|null: false|
-|user_id|integer|null :false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
-
 
 ### Association
 
