@@ -34,6 +34,7 @@
 
 - has_many :users, through: members
 - has_many :messages
+- has_many :members
 
 
 ## messages table
@@ -41,7 +42,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |content|string|　|
-|images|string|　|
+|image|string|　|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
