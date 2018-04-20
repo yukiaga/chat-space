@@ -16,7 +16,6 @@
 |Column|Type|Options|
 |------|----|-------|
 |name|string|index: true, null: false, unique: true|
-|mail|string|index: true, null: false, unique: true|
 
 ### Association
 
@@ -36,7 +35,6 @@
 
 - has_many :users, through: members
 - has_many :messages
-- has_many :pictures
 
 
 ## messages table
