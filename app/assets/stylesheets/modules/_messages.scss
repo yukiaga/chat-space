@@ -1,11 +1,11 @@
-.notification {
+// .notification {
 
-  .notice {
-    background-color: #38AEF0;
-    color: #fff;
-    text-align: center;
-  }
-}
+//   .notice {
+//     background-color: #38AEF0;
+//     color: #fff;
+//     text-align: center;
+//   }
+// }
 
 .wrapper {
   display: flex;
@@ -16,50 +16,50 @@
     color: #fff;
 
     .header {
-    background-color: #253141;
-    height: 100px;
-    line-height: 100px;
-    padding: 0 20px;
+      background-color: #253141;
+      height: 100px;
+      line-height: 100px;
+      padding: 0 20px;
 
       &__name {
-      font-size: 16px;
-      font-weight: bold;
-      display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        display: inline-block;
       }
 
       &__lists {
-      display: inline-block;
-      float: right;
-      list-style: none;
+        display: inline-block;
+        float: right;
+        list-style: none;
       }
 
         .list {
-        display: inline-block;
+          display: inline-block;
 
           .fa {
-    color: white;
+            color: white;
           }
         }
     }
 
     .groups {
-    height: calc(100vh - 100px);
-    padding: 0 20px;
-    background-color: #2f3e51;
+      height: calc(100vh - 100px);
+      padding: 0 20px;
+      background-color: #2f3e51;
 
       .group {
-      box-sizing: border-box;
-      padding: 20px 0 40px;
+        box-sizing: border-box;
+        padding: 20px 0 40px;
 
         &__name {
-        color: #fff;
-        font-size: 15px;
+          color: #fff;
+          font-size: 15px;
         }
 
         &__message {
-        color: #fff;
-        font-size: 11px;
-        margin-top: 5px;
+          color: #fff;
+          font-size: 11px;
+          margin-top: 5px;
         }
       }
     }
@@ -148,6 +148,7 @@
         }
       }
     }
+
     .form {
       background-color: #DDDDDD;
       box-sizing: border-box;
