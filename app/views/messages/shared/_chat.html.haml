@@ -30,10 +30,18 @@
         testtesttesttesttest2
 
 .form
-  %form.js-form#new_message{ action: "", method: "post"}
-    %input.form__message.js-content{placeholder: "type a message", type: "text", name: "message[content]", id: "message_content"}
+  = form_for [@group, @message] do |f|
+    = f.text_field :content, class: 'form__message', placeholder: 'type a message'
     .form__mask
-      %label.upload-label{for: "upload-icon"}
-        %i.fa.fa-picture-o
-          %input.hidden.js-file#upload-icon{ type: "file", name: "message[image]"}
-  %input.form__submit{ type: "submit", name: "commit", value: "Send"}
+      = f.label :image, class: 'form__mask__image' do
+        = fa_icon 'picture-o', class: 'icon'
+        = f.file_field :image, class: 'hidden'
+    = f.submit 'Send', class: 'form__submit'
+
+  / %form.js-form#new_message{ action: "", method: "post"}
+  /   %input.form__message.js-content{placeholder: "type a message", type: "text", name: "message[content]", id: "message_content"}
+  /   .form__mask
+  /     %label.upload-label{for: "upload-icon"}
+  /       %i.fa.fa-picture-o
+  /         %input.hidden.js-file#upload-icon{ type: "file", name: "message[image]"}
+  / %input.form__submit{ type: "submit", name: "commit", value: "Send"}
