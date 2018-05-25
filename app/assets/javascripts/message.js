@@ -35,11 +35,13 @@ $(function() {
     .done(function(data){
       var html = buildHTML(data);
       $('.messages').append(html).animate({scrollTop: $('.messages')[0].scrollHeight}, 500);
-      $('.form__message').val('')
-      $('.form__submit').prop("disabled", false)
+      $('.form__message').val('');
+      $('form')[0].reset();
+      $('.form__submit').prop("disabled", false);
     })
     .fail(function() {
       alert('error');
+      $('.form__submit').prop("disabled", false);
     })
   });
 });
