@@ -42,11 +42,11 @@ $(document).on('turbolinks:load', function() {
         dataType: 'json'
       })
 
-      .done(function(users) {
+      .done(function(user) {
         $('#user-search-result').empty();
-        if (users.length !== 0) {
-          users.forEach(function(users){
-            appendUser(users);
+        if (user.length !== 0) {
+          user.forEach(function(user){
+            appendUser(user);
           });
         }
         else {
