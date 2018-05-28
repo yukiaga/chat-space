@@ -90,7 +90,6 @@ $(document).on('turbolinks:load', function() {
   });
   function update(){
     var message_id = $('.message').last().data('message-id');
-    console.log(message_id);
     $.ajax({
       type: 'GET',
       url: location.href,
@@ -98,7 +97,6 @@ $(document).on('turbolinks:load', function() {
       datatype: 'json'
     })
     .done(function(new_messages) {
-      console.log(new_messages)
       if (new_messages.length !== 0) {
         new_messages.forEach(function(new_message) {
           buildMESSAGE(new_message);
