@@ -22,7 +22,7 @@
 
     .form
       = form_for [@group, @message], html: {class: 'js-form'} do |f|
-        = f.text_field :content, class: 'form__message js-content', placeholder: '123456789'
+        = f.text_field :content, class: 'form__message js-content', placeholder: 'text a message'
         .form__mask
           = f.label :image, class: 'upload-label' do
             = fa_icon 'picture-o', class: 'icon'
