@@ -1,3 +1,19 @@
+# README
+
+## How it works
+
+### top
+
+![chat-space](https://github.com/yukiaga/chat-space/wiki/images/chat-space2.gif)
+
+### group-edit
+
+![chat-space](https://github.com/yukiaga/chat-space/wiki/images/chat-space.gif)
+
+### automatic updating
+
+![chat-space](https://github.com/yukiaga/chat-space/wiki/images/chat-space3.gif)
+
 ## group_users table
 
 |Column|Type|Options|
